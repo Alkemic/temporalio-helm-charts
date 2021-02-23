@@ -61,6 +61,7 @@ server:
   # requests:
   #  cpu: 100m
   #  memory: 128Mi
+  securityContext: {}
   nodeSelector: {}
   tolerations: []
   affinity: {}
@@ -155,6 +156,7 @@ server:
       # timerType: histogram
     podAnnotations: {}
     resources: {}
+    securityContext: {}
     nodeSelector: {}
     tolerations: []
     affinity: {}
@@ -173,6 +175,7 @@ server:
       # timerType: histogram
     podAnnotations: {}
     resources: {}
+    securityContext: {}
     nodeSelector: {}
     tolerations: []
     affinity: {}
@@ -191,6 +194,7 @@ server:
       # timerType: histogram
     podAnnotations: {}
     resources: {}
+    securityContext: {}
     nodeSelector: {}
     tolerations: []
     affinity: {}
@@ -209,6 +213,7 @@ server:
       # timerType: histogram
     podAnnotations: {}
     resources: {}
+    securityContext: {}
     nodeSelector: {}
     tolerations: []
     affinity: {}
@@ -219,6 +224,8 @@ admintools:
     repository: temporalio/admin-tools
     tag: 1.7.0
     pullPolicy: IfNotPresent
+
+  securityContext: {}
 
   service:
     type: ClusterIP
@@ -268,6 +275,7 @@ web:
   # requests:
   #  cpu: 100m
   #  memory: 128Mi
+  securityContext: {}
 
   nodeSelector: {}
 
